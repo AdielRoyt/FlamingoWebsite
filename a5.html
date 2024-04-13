@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/a5.css">
+    <script src="js/a5.js"></script>
+    <title>My Bookshelf</title>
+</head>
+
+<body>
+    <h2>My Bookshelf</h2>
+    <h3>Add A Book</h3>
+    <form id="bookform" name="bookform" method="post" action="https://httpbin.org/post">
+    <label for="title">Title:</label>
+    <input type="text" name="title" id="title">
+    <label for="author">Author:</label>
+    <input type="text" name="author" id="author">
+    <br>
+    <br>
+    <label for="genre">Genre:</label>
+    <select name="genre" id="genre">
+        <option>Select a Genre</option>
+        <option value="drama">Drama</option>
+        <option value="fairytale">Fairy Tale</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="fiction">Fiction</option>
+        <option value="horror">Horror</option>
+        <option value="humor">Humor</option>
+        <option value="legend">Legend</option>
+        <option value="poetry">Poetry</option>
+        <option value="sciencefiction">Science Fiction</option>
+        <option value="nonfiction">Nonfiction</option>
+    </select>
+    <br><br>
+    <label for="desc">Description:</label>
+    <textarea id="desc" name="desc" rows="4" cols="30"></textarea>
+    <br><br>
+    <input type="reset" value="Clear Input">
+    </form>
+    <br>
+    <button id="addBook" onclick="addBook()">Add Book</button>
+    <br>
+    <p name="bookadded" id="bookadded"></p>
+    <hr>
+    <h2>Search for A Book</h2>
+
+    <p>Leave the search box empty and click "Search" button, you'll get all the books in the bookshelf.</p>
+    <p>You can search by full or partial of <strong>book title, author name, Genre, or description.</strong></p>
+
+    <form name="searchForm" method="post" onsubmit="return false;">
+        <input type="text" name="search" id="search" placeholder="Input full or partial of book title, author name, genre, or description">
+    <button onclick="displayTable();">Search</button>
+    <input type="reset" value="Clear Search Result">
+    </form>
+    <div id="searchDiv">
+        <table id="booktable">
+
+        </table>
+    </div>
+
+    <footer>
+        <p style="position:relative;bottom:0">&#169;2023 Adiel Roytgarts</p>
+    </footer>
+</body>
+</html>

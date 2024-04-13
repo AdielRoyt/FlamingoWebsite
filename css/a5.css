@@ -1,0 +1,12 @@
+body{
+    color:aqua;
+    text-decoration:bold;
+    text-shadow: 2px 2px blue;
+    background-color:grey;
+}
+
+table, th, td
+{
+    border: 3px  solid black;
+    border-collapse: collapse;
+}

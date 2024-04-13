@@ -1,0 +1,70 @@
+nav
+{
+    padding:8px;
+    background-color: rgb(237, 170, 205);
+    text-align:center;
+}
+
+nav ul
+{
+    list-style-type:none;
+    padding-left:20px;
+    margin:0px
+}
+
+nav ul li
+{
+    display:inline-block;
+    background-color: rgb(237, 170, 205);
+}
+
+nav ul li a
+{
+    border: solid 5px black;
+    color:rgb(255, 0, 136);
+    text-decoration:none;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+nav ul li a:hover{
+    background-color:#222;
+    color: #fff;
+    font-size: larger;
+}
+
+
+p
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#centerdiv
+{
+    text-align:center;
+}
+
+#icon
+{
+    border-radius:50%;
+}
+
+.explain
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.flamingovid1
+{
+    float:left;
+}
+.flamingovid2
+{
+    float:middle;
+}
+
+.background
+{
+    background-color:pink;
+}
